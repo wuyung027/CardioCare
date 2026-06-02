@@ -1,0 +1,10 @@
+artifact_location: file:C:/Users/wuyun/OneDrive/Desktop/4학년 1학기/기계학습/CardioCare/mlruns/192824147043345020/models/m-d997e3c54aa943b6b95a32eae92119fe/artifacts
+creation_timestamp: 1780302097676
+experiment_id: '192824147043345020'
+last_updated_timestamp: 1780302103699
+model_id: m-d997e3c54aa943b6b95a32eae92119fe
+model_type: null
+name: model
+source_run_id: 7b24c3a49db745c695ee24faaaa495be
+status: 2
+status_message: null

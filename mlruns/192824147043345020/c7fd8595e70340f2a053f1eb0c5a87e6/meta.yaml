@@ -1,0 +1,14 @@
+artifact_uri: file:C:/Users/wuyun/OneDrive/Desktop/4학년 1학기/기계학습/CardioCare/mlruns/192824147043345020/c7fd8595e70340f2a053f1eb0c5a87e6/artifacts
+end_time: 1780302118470
+entry_point_name: ''
+experiment_id: '192824147043345020'
+lifecycle_stage: active
+run_id: c7fd8595e70340f2a053f1eb0c5a87e6
+run_name: tuned_logistic_regression
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780302109540
+status: 3
+tags: []
+user_id: wuyun

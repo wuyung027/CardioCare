@@ -1,0 +1,14 @@
+artifact_uri: file:C:/Users/wuyun/OneDrive/Desktop/4학년 1학기/기계학습/CardioCare/mlruns/192824147043345020/284c7fb56f614d51a081045cd7f133a5/artifacts
+end_time: 1780302096503
+entry_point_name: ''
+experiment_id: '192824147043345020'
+lifecycle_stage: active
+run_id: 284c7fb56f614d51a081045cd7f133a5
+run_name: svc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780302090714
+status: 3
+tags: []
+user_id: wuyun

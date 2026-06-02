@@ -1,0 +1,3 @@
+﻿age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal,prediction,disease_probability
+52,1,0,125,212,0,1,168,0,1.0,2,2,3,0,0.30296005979862023
+41,0,1,130,204,0,0,172,0,1.4,2,0,2,1,0.8548988131690934
