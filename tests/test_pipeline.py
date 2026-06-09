@@ -48,16 +48,27 @@ class TestCardioCarePipeline(unittest.TestCase):
         self.assertIn("disease_probability", result.columns)
         self.assertTrue(result["disease_probability"].between(0, 1).all())
 
-    def test_clinical_input_range_validation(self):
+    def test_predict_proba_sum_to_one(self):
         """
         테스트 3.
+        각 샘플에 대한 클래스별 예측 확률의 합이 1인지 확인한다.
+        """
+        probabilities = self.model.predict_proba(self.sample_input)
+        row_sums = probabilities.sum(axis=1)
+
+        for value in row_sums:
+            self.assertAlmostEqual(value, 1.0, places=5)
+
+    def test_clinical_input_range_validation(self):
+        """
+        테스트 4.
         임상적으로 범위가 정해진 특성값이 정상 범위일 때 검증을 통과하는지 확인한다.
         """
         self.assertTrue(validate_input_data(self.sample_input))
 
     def test_invalid_chol_range_raises_error(self):
         """
-        테스트 4.
+        테스트 5.
         chol 값이 비정상 범위이면 ValueError가 발생하는지 확인한다.
         """
         invalid_input = self.sample_input.copy()
@@ -68,7 +79,7 @@ class TestCardioCarePipeline(unittest.TestCase):
 
     def test_deterministic_prediction(self):
         """
-        테스트 5.
+        테스트 6.
         같은 입력 데이터에 대해 같은 예측 결과가 나오는지 확인한다.
         """
         result_1 = predict(self.model, self.sample_input)
