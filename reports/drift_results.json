@@ -1,0 +1,44 @@
+{
+    "model_version": "best_tuned_model_v1",
+    "original_metrics": {
+        "balanced_accuracy": 0.8143939393939394,
+        "precision": 0.8055555555555556,
+        "recall": 0.8787878787878788,
+        "f1": 0.8405797101449275
+    },
+    "drift_metrics": {
+        "balanced_accuracy": 0.7646103896103896,
+        "precision": 0.875,
+        "recall": 0.6363636363636364,
+        "f1": 0.7368421052631579
+    },
+    "ks_test_results": {
+        "age": {
+            "ks_statistic": 0.14366369634718726,
+            "p_value": 0.23962145748359323,
+            "drift_detected": false
+        },
+        "trestbps": {
+            "ks_statistic": 0.42548125977824636,
+            "p_value": 1.885513244596404e-08,
+            "drift_detected": true
+        },
+        "chol": {
+            "ks_statistic": 0.43357594721447523,
+            "p_value": 9.080951006357028e-09,
+            "drift_detected": true
+        },
+        "thalach": {
+            "ks_statistic": 0.12352901163186178,
+            "p_value": 0.408505367929969,
+            "drift_detected": false
+        },
+        "oldpeak": {
+            "ks_statistic": 0.5767634854771784,
+            "p_value": 1.1630590488072823e-15,
+            "drift_detected": true
+        }
+    },
+    "prediction_changes": 12,
+    "total_samples": 61
+}
