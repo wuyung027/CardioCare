@@ -1,0 +1,80 @@
+{
+    "method": "RandomForestClassifier + SelectFromModel",
+    "threshold": "median",
+    "selected_features": [
+        "age",
+        "chol",
+        "thalach",
+        "oldpeak",
+        "cp",
+        "ca",
+        "thal"
+    ],
+    "all_feature_importances": [
+        {
+            "feature": "cp",
+            "importance": 0.181422194107779,
+            "selected": true
+        },
+        {
+            "feature": "thalach",
+            "importance": 0.12424188222436769,
+            "selected": true
+        },
+        {
+            "feature": "ca",
+            "importance": 0.10049267834754193,
+            "selected": true
+        },
+        {
+            "feature": "oldpeak",
+            "importance": 0.09539237972980849,
+            "selected": true
+        },
+        {
+            "feature": "thal",
+            "importance": 0.09299197970121867,
+            "selected": true
+        },
+        {
+            "feature": "age",
+            "importance": 0.08249022750301188,
+            "selected": true
+        },
+        {
+            "feature": "chol",
+            "importance": 0.07812224680498965,
+            "selected": true
+        },
+        {
+            "feature": "trestbps",
+            "importance": 0.07211312273256999,
+            "selected": false
+        },
+        {
+            "feature": "exang",
+            "importance": 0.06359479890265357,
+            "selected": false
+        },
+        {
+            "feature": "sex",
+            "importance": 0.04106394468607892,
+            "selected": false
+        },
+        {
+            "feature": "slope",
+            "importance": 0.03420464708511756,
+            "selected": false
+        },
+        {
+            "feature": "restecg",
+            "importance": 0.023974368622614792,
+            "selected": false
+        },
+        {
+            "feature": "fbs",
+            "importance": 0.009895529552247782,
+            "selected": false
+        }
+    ]
+}
